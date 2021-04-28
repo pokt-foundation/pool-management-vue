@@ -314,14 +314,14 @@ export default {
         const amount = bnum(this.amounts[token]);
         const weiAmount = denormalizeBalance(
           amount,
-          this.web3.tokenMetadata[token].decimals
+          this.web3.tokenMetadata[token]?.decimals ?? 18
         );
         if (weiAmount.lt('1e6')) {
           return this.$t('errMinTokenBalance');
         }
         const balance = normalizeBalance(
           this.web3.balances[token],
-          this.web3.tokenMetadata[token].decimals
+          this.web3.tokenMetadata[token]?.decimals ?? 18
         );
         if (amount.gt(balance)) {
           return this.$t('errExceedsBalance');
