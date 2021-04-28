@@ -36,6 +36,17 @@ const registryKovan = {
       hasIcon: false,
       logoUrl: ''
     },
+    '0x07de306ff27a2b630b1141956844eb1552b956b5': {
+      address: '0x07de306ff27a2b630b1141956844eb1552b956b5',
+      id: 'usdt',
+      name: 'USDT',
+      symbol: 'USDT',
+      decimals: 18,
+      precision: 3,
+      color: '#2875ca',
+      hasIcon: false,
+      logoUrl: ''
+    },
     '0x41286Bb1D3E870f3F750eB7E1C25d7E48c8A1Ac7': {
       address: '0x41286Bb1D3E870f3F750eB7E1C25d7E48c8A1Ac7',
       id: 'balancer',
